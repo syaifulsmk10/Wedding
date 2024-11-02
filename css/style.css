@@ -1,0 +1,599 @@
+body {
+    /* background-image: url('../lamaran/bg.png');  */
+    background-color: #f5f5f5;
+    background-size: cover; /* Make the image cover the entire page */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the image fixed when scrolling */
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Set default text color for better readability */
+    
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    body {
+        padding: 20px; /* Add some padding for larger screens */
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        padding: 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* Ensure the image always covers the area */
+        padding: 10px; /* Further reduce padding */
+        font-size: 1em; /* Set a base font size */
+    }
+
+    h1, h2, h3, p { /* Adjust heading and paragraph sizes */
+        margin: 0;
+        padding: 5px 0; /* Add padding for spacing */
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 5px; /* Minimal padding on extra small screens */
+        font-size: 0.9em; /* Slightly decrease font size for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+
+    h2 {
+        font-size: 1.3em; /* Adjust heading size */
+    }
+
+    p {
+        line-height: 1.5; /* Improve line spacing for readability */
+    }
+}
+
+/* Add styles for landscape orientation on small devices */
+@media (orientation: landscape) and (max-width: 768px) {
+    body {
+        padding: 10px; /* Add padding for landscape orientation */
+    }
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+     /* Memastikan posisi relative untuk body */
+}
+
+
+.carousel-margin {
+    margin-top: 56px; /* Tinggi navbar */
+  }
+
+
+.carousel-item img {
+filter: brightness(85%); /* Menggelapkan gambar sebesar 50% */
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Jarak dari bawah */
+    right: 20px; /* Jarak dari kanan */
+    background-color: #25D366; /* Warna latar belakang WhatsApp */
+    border-radius: 50%; /* Membuat tombol bulat */
+    width: 60px; /* Lebar tombol */
+    height: 60px; /* Tinggi tombol */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Menghilangkan garis bawah */
+    z-index: 9999; /* Memastikan ikon di atas elemen lain */
+}
+
+.whatsapp-button img {
+    width: 30px; /* Ukuran ikon WhatsApp */
+    height: 30px; /* Ukuran ikon WhatsApp */
+}
+
+
+
+.logo-background {
+    overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent line breaks */
+  background-color: black; /* Optional background color */
+  color: white; /* Text color */
+  padding: 20px 0; /* Memastikan gambar terus dalam satu baris */
+}
+
+.logo-background img {
+    display: inline-block;
+    /* Start off-screen to the right */
+padding-right: 20px;
+    animation: scroll 1s linear infinite;/* Animasi berjalan terus-menerus */
+}
+
+/* Animasi scroll yang berulang tanpa henti */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); } /* Gerakan scroll ke kiri */
+}
+.scroll {
+    animation: scroll 20s linear infinite; /* Durasi animasi yang lebih lama */
+}
+
+/* Responsif */
+@media (max-width: 576px) {
+    .logo-background img { height: 50px; }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .logo-background img { height: 70px; }
+}
+
+@media (min-width: 769px) {
+    .logo-background img { height: 100px; }
+}
+
+
+
+
+.title-3dd {
+    font-size: 6em; /* Ukuran font untuk layar besar */
+    font-weight: bold;
+    color: #d81919; /* Warna teks utama */
+    text-shadow: 2px 2px 0 #999, 4px 4px 0 #777, 6px 6px 0 #555; /* Efek bayangan untuk 3D */
+    margin-top: 80px;
+
+
+}
+
+.title-3d {
+    font-size: 6em; /* Ukuran font untuk layar besar */
+    font-weight: bold;
+    color: #d81919; /* Warna teks utama */
+    text-shadow: 2px 2px 0 #999, 4px 4px 0 #777, 6px 6px 0 #555; /* Efek bayangan untuk 3D */
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+
+}
+
+@media (max-width: 1200px) {
+    .title-3d {
+        font-size: 5em; /* Ukuran font untuk layar sedang */
+    }
+    .title-3dd {
+        font-size: 5em; /* Ukuran font untuk layar sedang */
+    }
+}
+
+@media (max-width: 992px) {
+    .title-3d {
+        font-size: 4em; /* Ukuran font untuk layar kecil */
+    }
+    .title-3dd {
+        font-size: 4em; /* Ukuran font untuk layar kecil */
+    }
+}
+
+@media (max-width: 768px) {
+    .title-3d {
+        font-size: 3em; /* Ukuran font untuk tablet */
+    }
+    .title-3dd {
+        font-size: 3em; /* Ukuran font untuk tablet */
+    }
+}
+
+@media (max-width: 576px) {
+    .title-3d {
+        font-size: 2em; /* Ukuran font untuk ponsel */
+    }
+    .title-3dd {
+        font-size: 2em; /* Ukuran font untuk ponsel */
+    }
+}
+
+.custom-box {
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row.justify-content-center {
+    display: flex;
+    align-items: stretch; /* Memastikan kolom memiliki tinggi sama */
+}
+
+.custom-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan gambar sesuai dalam kolom */
+}
+
+.block-text {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .block-text {
+        font-size: 2.5em;
+        padding: 20px;
+    }
+    
+    .col-md-5 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-box {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.icon-service {
+    background-color: white; /* Warna latar belakang lingkaran */
+    color: #dc3545; /* Warna ikon */
+    border-radius: 50%; /* Membuat lingkaran */
+    width: 60px; /* Ukuran lingkaran */
+    height: 60px; /* Ukuran lingkaran */
+    display: flex; /* Agar ikon berada di tengah */
+    justify-content: center; /* Meratakan ikon secara horizontal */
+    align-items: center; /* Meratakan ikon secara vertikal */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
+
+
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 2200px) {
+.card-promo {
+    background-color: rgba(198, 143, 143, 0.621);
+    border-radius: 20px; /* Mengurangi sudut bulat */
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    margin-bottom: 20px; /* Jarak antara card */
+    width: 400px;
+    margin-right: 10px;
+}
+
+.content{
+    font-size: 70px;
+}
+
+
+}
+
+@media (max-width: 1420px) {
+.card-promo {
+    background-color: rgba(198, 143, 143, 0.621);
+    border-radius: 20px; /* Mengurangi sudut bulat */
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    margin-bottom: 20px; /* Jarak antara card */
+    width: 300px;
+    margin-right: 10px;
+}
+
+.content{
+    font-size: 50px;
+}
+
+.teks{
+    font-size: 20px;
+}
+
+.teks1{
+    font-size: 15px;
+}
+}
+
+@media (max-width: 911px) {
+.card-promo {
+    background-color: rgba(198, 143, 143, 0.621);
+    border-radius: 20px; /* Mengurangi sudut bulat */
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    margin-bottom: 20px; /* Jarak antara card */
+    width: 200px;
+    margin-right: 10px;
+}
+
+.content{
+    font-size: 40px;
+}
+
+.teks{
+    font-size: 18px;
+}
+
+.teks1{
+    font-size: 13px;
+}
+}
+
+@media (max-width: 768px) {
+.card-promo {
+    background-color: rgba(198, 143, 143, 0.621);
+    border-radius: 20px; /* Mengurangi sudut bulat */
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    margin-bottom: 20px; /* Jarak antara card */
+    width: 160px;
+    margin-right: 10px;
+}
+
+.content{
+    font-size: 40px;
+}
+
+.teks{
+    font-size: 15px;
+}
+
+.teks1{
+    font-size: 11px;
+}
+}
+
+@media (max-width: 576px) {
+.card-promo {
+    background-color: rgba(198, 143, 143, 0.621);
+    border-radius: 20px; /* Mengurangi sudut bulat */
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    margin-bottom: 20px; /* Jarak antara card */
+    width: 140px;
+    margin-right: 10px;
+}
+
+.content{
+    font-size: 35px;
+}
+
+.teks{
+    font-size: 13px;
+}
+
+.teks1{
+    font-size: 10px;
+}
+}
+
+
+.card-promo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mt-10 {
+    margin-top: 30px;
+}
+
+.text-light {
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.bg-danger {
+    padding-bottom: 80px;
+}
+
+.serv {
+    background-color: black;
+    color: white;
+}
+.serv > p {
+    color: white;
+}
+.wedd {
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+.card-img-top {
+    width: 100%; /* Agar lebar gambar mengikuti kontainer */
+    height: 200px; /* Atur tinggi sesuai kebutuhan */
+    object-fit: cover; /* Memastikan gambar terisi dengan baik dan tidak merusak proporsi */
+}
+
+/* Efek bayangan dan 3D pada teks */
+.fancy-text {
+    font-family: 'Poppins', sans-serif; /* Font modern */
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Efek 3D lebih halus */
+    color: #ffffff; /* Warna putih */
+}
+
+.fancy-text:hover {
+    color: #b76e79; /* Rose Gold saat hover */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Styling untuk navbar dengan tema black, white, dan rose gold */
+.navbar-dark.bg-dark {
+    background-color: #000000; /* Latar belakang hitam */
+    border-bottom: 2px solid #b76e79; /* Border Rose Gold di bawah */
+}
+
+/* .navbar-toggler {
+    border-color: #b76e79;
+} */
+
+.shadow-lg {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Shadow lebih ringan */
+}
+
+/* Ukuran dan layout navbar */
+.navbar {
+    font-size: 1.2rem; /* Ukuran font lebih kecil */
+    height: 60px; /* Tinggi navbar lebih kecil */
+}
+
+.navbar-brand {
+    font-size: 1.7rem; /* Ukuran brand lebih kecil */
+    text-transform: uppercase;
+    color: #ffffff; /* Warna putih */
+}
+
+.navbar-brand span {
+    color: #b76e79; /* Rose Gold untuk "Wedding" */
+}
+
+.nav-link {
+    font-size: 1.2rem; /* Ukuran link lebih kecil */
+    color: #ffffff; /* Warna link putih */
+}
+
+.nav-item {
+    margin-right: 15px; /* Jarak antar item lebih kecil */
+}
+
+/* Media query untuk layar kecil (mobile) */
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 1rem; /* Ukuran font lebih kecil */
+        height: auto; /* Tinggi navbar menyesuaikan */
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem; /* Ukuran brand lebih kecil */
+    }
+
+    .nav-link {
+        font-size: 1rem; /* Ukuran link lebih kecil */
+    }
+
+    .nav-item {
+        margin-right: 10px; /* Jarak antar item lebih kecil */
+    }
+
+    .navbar-collapse {
+        text-align: center; /* Menyusun item ke tengah */
+    }
+}
+
+
+.card {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow settings */
+    transition: box-shadow 0.3s ease; /* Transition effects */
+    border-radius: 5px; /* Optional: Add border-radius for smoother edges */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.card-promoo {
+    transition: transform .4s; /* Transition effect for scaling */
+    max-width: 100%; /* Ensure cards do not overflow */
+}
+
+.card-promoo:hover {
+    transform: scale(1.05); /* Slightly smaller scale on hover */
+}
+
+.button-card:hover {
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.row {
+    margin: 0; /* Remove default margin on row */
+}
+
+.col-lg-3,
+.col-sm-6 {
+    padding: 0 10px; /* Add horizontal padding between columns */
+}
+
+.gallery-overlay {
+    border: 2px solid #fff; /* Maintain the border */
+    margin-top: -1px; /* Prevent double borders with adjacent cards */
+}
+
+.custom-height {
+    height: 500px; /* Maintain a specific height */
+}
+.story-timeline .row {
+    display: flex; /* Menggunakan flexbox untuk baris */
+    justify-content: center; /* Memastikan kolom di tengah secara horizontal */
+}
+
+.story-timeline .col-md-6 {
+    display: flex; /* Menggunakan flexbox untuk kolom */
+    justify-content: center; /* Memastikan konten di tengah secara horizontal */
+    align-items: center; /* Memastikan konten di tengah secara vertikal */
+}
+
+.img-border {
+    max-width: 100%; /* Pastikan gambar tidak melebihi ukuran kolom */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+}
+
+.box {
+    border: 2px solid #fff; /* White border */
+    margin: 10px; /* Spacing between boxes */
+    padding: 20px; /* Internal padding */
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+}
+
+.container {
+    overflow: hidden; /* Prevent overflow */
+}
