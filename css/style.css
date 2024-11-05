@@ -472,10 +472,6 @@ h5 {
     border-bottom: 2px solid #b76e79; /* Border Rose Gold di bawah */
 }
 
-/* .navbar-toggler {
-    border-color: #b76e79;
-} */
-
 .shadow-lg {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Shadow lebih ringan */
 }
@@ -506,7 +502,7 @@ h5 {
 }
 
 /* Media query untuk layar kecil (mobile) */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .navbar {
         font-size: 1rem; /* Ukuran font lebih kecil */
         height: auto; /* Tinggi navbar menyesuaikan */
@@ -525,7 +521,33 @@ h5 {
     }
 
     .navbar-collapse {
-        text-align: center; /* Menyusun item ke tengah */
+        text-align: left; /* Menyusun item ke kanan */
+        background-color: black; /* Pastikan latar belakang sama dengan navbar */
+        position: absolute; /* Mengubah posisi menjadi absolute */
+        top: 60px; /* Menempatkan menu di bawah navbar */
+        padding-left: 20px;
+        right: 0; /* Memposisikan menu di sebelah kanan */
+        width: 250px; /* Menentukan lebar menu */
+        height: calc(100vh - 60px); /* Mengatur tinggi menu sesuai tinggi viewport */
+        overflow-y: auto; /* Memungkinkan scroll jika isi lebih tinggi dari tampilan */
+        display: none; /* Menyembunyikan menu secara default */
+    }
+
+    .navbar-collapse.show {
+        display: block; /* Menampilkan menu ketika toggler diklik */
+    }
+
+    /* Menyusun menu dropdown */
+    .navbar-nav {
+        flex-direction: column; /* Menyusun item secara vertikal */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0; /* Jarak antar item menu vertikal */
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Memindahkan toggler ke kanan */
     }
 }
 
