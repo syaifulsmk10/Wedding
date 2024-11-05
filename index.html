@@ -285,13 +285,13 @@
       ></path>
     </svg>
 
-    <div class="container-fluid story position-relative" id="weddingStory">
+    <div class="container-fluid story position-relative" style="margin-bottom: 80px;" id="weddingStory">
       <div class="container position-relative">
         <div
           class="text-center mb-1 mb-md-5 wow fadeInUp"
           data-wow-delay="0.1s"
         >
-          <h1 id="testimoni" class="display-6 poppins-semibold text-dark">
+          <h1 id="testimoni" class="display-6 poppins-semibold text-dark ">
             Testimoni
           </h1>
         </div>
@@ -318,7 +318,99 @@
       </div>
     </div>
 
-    <div class="container-fluid container">
+
+   
+    
+    <div class="container-fluid story position-relative" id="weddingStory">
+      <div class="container position-relative">
+        <div class="text-center mb-1 mb-md-5 wow fadeInUp" data-wow-delay="0.1s">
+          <h1 id="testimoni" class="display-6 poppins-semibold text-dark">
+            Testimoni Lainnya
+          </h1>
+        </div>
+        <div class="story-timeline">
+          <div id="testimonialCarousel" class="carousel slide wow fadeInUp" data-wow-delay="0.2s" data-bs-ride="carousel" data-bs-interval="3000">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center h-auto">
+                  <img src="testimoni/d.jpeg" class="carousel-img img-border" alt="Testimoni 1" />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center h-auto">
+                  <img src="testimoni/b.jpeg" class="carousel-img img-border" alt="Testimoni 2" />
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center h-auto">
+                  <img src="testimoni/c.jpeg" class="carousel-img img-border" alt="Testimoni 2" />
+                </div>
+              </div>
+              <!-- Tambahkan lebih banyak item carousel di sini jika diperlukan -->
+            </div>
+    
+            <!-- Controls untuk navigasi manual -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- CSS -->
+    <style>
+      /* Ukuran tetap untuk gambar, tapi fleksibel pada carousel item */
+      .carousel-img {
+        width: 100%; /* Pastikan gambar menempati seluruh kontainer */
+        max-width: 800px;  /* Atur ukuran maksimum */
+        height: 800px; /* Atur ukuran tinggi tetap */
+        object-fit: contain; /* Pastikan gambar tidak terpotong */
+      }
+    
+      /* Responsive pada layar kecil */
+      @media (max-width: 576px) {
+        .carousel-img {
+          max-width: 300px;
+          height: 250px;
+        }
+      }
+    
+      @media (min-width: 577px) and (max-width: 768px) {
+        .carousel-img {
+          max-width: 450px;
+          height: 350px;
+        }
+      }
+
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+    .carousel-img {
+      max-width: 400px;
+      height: auto;
+    }
+  }
+
+
+
+      @media (min-width: 1025px) {
+    .carousel-img {
+      max-width: 1200px;
+      height: 600px;
+    }
+  }
+    </style>
+    
+    
+
+    <div class="container-fluid container" style="margin-top: 80px;">
       <div class="mb-5">
         <h1 class="text-center poppins-semibold display-6 text-dark py-5">
           Makeup Wedding &<span class="text-warning"> Decoration</span>
