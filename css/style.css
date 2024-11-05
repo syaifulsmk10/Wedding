@@ -524,8 +524,8 @@ h5 {
         text-align: left; /* Menyusun item ke kanan */
         background-color: black; /* Pastikan latar belakang sama dengan navbar */
         position: absolute; /* Mengubah posisi menjadi absolute */
-        top: 60px; /* Menempatkan menu di bawah navbar */
-        padding-left: 20px;
+        top: 57px; /* Menempatkan menu di bawah navbar */
+        padding-left: 50px;
         right: 0; /* Memposisikan menu di sebelah kanan */
         width: 250px; /* Menentukan lebar menu */
         height: calc(100vh - 60px); /* Mengatur tinggi menu sesuai tinggi viewport */
