@@ -559,6 +559,34 @@ h5 {
 }
 
 
+/* Ukuran default untuk h5 */
+h5 {
+    font-size: 1.25rem; /* Ukuran default untuk desktop */
+  }
+  
+  /* Untuk tablet */
+  @media (max-width: 1024px) {
+    h5 {
+      font-size: 1.15rem; /* Ukuran untuk tablet */
+    }
+  }
+  
+  /* Untuk handphone */
+  @media (max-width: 768px) {
+    h5 {
+      font-size: 0.9rem; /* Ukuran untuk handphone */
+    }
+  }
+  
+  /* Untuk perangkat dengan layar yang lebih kecil */
+  @media (max-width: 480px) {
+    h5 {
+      font-size: 0.9rem; /* Ukuran untuk handphone kecil */
+    }
+  }
+  
+
+
 .card {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow settings */
     transition: box-shadow 0.3s ease; /* Transition effects */
