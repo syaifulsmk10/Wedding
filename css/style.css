@@ -501,6 +501,9 @@ h5 {
     margin-right: 15px; /* Jarak antar item lebih kecil */
 }
 
+
+
+
 /* Media query untuk layar kecil (mobile) */
 @media (max-width: 991px) {
     .navbar {
@@ -531,6 +534,10 @@ h5 {
         height: calc(100vh - 60px); /* Mengatur tinggi menu sesuai tinggi viewport */
         overflow-y: auto; /* Memungkinkan scroll jika isi lebih tinggi dari tampilan */
         display: none; /* Menyembunyikan menu secara default */
+
+    
+       
+        transition: max-height 0.2s ease-out; /* Transisi halus saat berubah tinggi */
     }
 
     .navbar-collapse.show {
