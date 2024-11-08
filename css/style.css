@@ -570,6 +570,9 @@ h5 {
       font-size: 1.15rem; /* Ukuran untuk tablet */
     }
   }
+  .description{
+    text-align: start;
+  }
   
   /* Untuk handphone */
   @media (max-width: 768px) {
